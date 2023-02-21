@@ -14,7 +14,7 @@ function countStudents(filepath) {
       if (!(student[3] in fields)) {
         fields[student[3]] = [];
       }
-      fields[student[3]].push(student[0]);
+      return fields[student[3]].push(student[0]);
     });
   for (const key in fields) {
     if (Object.prototype.hasOwnProperty.call(fields, key)) {
